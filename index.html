@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Movies and series encyclopedia" />
+    <meta name="keywords" content="Movies,Series,trend movies, trend series" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouvasa</title>
+    <link rel="shortcut icon" href="imgs/2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;800&family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--- loading-screen section   -->
+    <section id="loading-screen">
+      <div id="img1" class="img"></div>
+      <div id="img2" class="img"></div>
+      <div id="img3" class="img"></div>
+      <div id="img4" class="img"></div>
+      <div id="img5" class="img"></div>
+    </section>
+
+    <section id="side-bar">
+      <div
+        class="
+          hide-side
+          text-white
+          d-flex
+          justify-content-between
+          flex-column
+          pe-5
+        "
+      >
+        <ul>
+          <li>
+            <a>Now playing</a>
+          </li>
+          <li>
+            <a>Popular</a>
+          </li>
+          <li>
+            <a>Top Rated</a>
+          </li>
+          <li>
+            <a>Trending</a>
+          </li>
+          <li>
+            <a>Upcoming</a>
+          </li>
+          <li>
+            <a>Contact Us</a>
+          </li>
+        </ul>
+        <div class="contact-icons">
+          <i class="fab fa-facebook-f me-2"></i>
+          <i class="fab fa-twitter me-2"></i>
+          <i class="fab fa-dribbble"></i>
+          <p class="pt-2 text-muted">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="visible-side d-flex flex-column justify-content-between">
+        <div class="logo">
+          <img src="imgs/pngwing.com.png" alt="logo" />
+        </div>
+        <div>
+          <i class="fa fa-align-justify"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="contacts d-flex flex-column justify-content-between">
+          <i class="pb-3 fas fa-globe"></i>
+          <i class="fas fa-share-alt"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="home" class="ms-5 text-center py-5">
+      <img class="logo-img" src="imgs/2.png" alt="logo" />
+      <h1 class="pb-5 pt-3">Movasa</h1>
+      <button id="all" class="btn me-3">All</button>
+      <button id="movies" class="btn me-3">Movie</button>
+      <button id="series" class="btn me-3">Tv</button>
+      <div class="container pt-5 text-center">
+        <div class="row py-5 searching w-75 m-auto">
+          <div class="col-md-6">
+            <div>
+              <input
+                id="search-by-movies"
+                type="text"
+                placeholder="Get movies by word.."
+                class="
+                  mt-4 mt-md-0
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <input
+                id="general-search"
+                type="text"
+                placeholder="Search"
+                class="
+                  mt-4 mt-md-0
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5" id="myRow"></div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="py-5">
+      <div class="container w-75">
+        <h2 class="text-white">ContacUs...</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter Your Name"
+                class="
+                  mt-5
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+              <div class="d-none mt-2 alert alert-danger">
+                Enter a valid name
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter Your Email"
+                class="
+                  mt-5
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+              <div class="d-none mt-2 alert alert-danger">
+                Enter a valid email
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="Enter Your Phone"
+                class="
+                  mt-5
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+              <div class="d-none mt-2 alert alert-danger">
+                Enter a valid phone number
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <input
+                id="age"
+                type="text"
+                placeholder="Enter Your Age"
+                class="
+                  mt-5
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+              <div class="d-none mt-2 alert alert-danger">
+                Enter a valid age
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter Your Password"
+                class="
+                  mt-5
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+              <div class="d-none mt-2 alert alert-danger">
+                Entre valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <input
+                id="name"
+                type="password"
+                placeholder="Rewrite Your Password"
+                class="
+                  mt-5
+                  text-center
+                  form-control
+                  bg-transparent
+                  border-0 border-bottom
+                "
+              />
+              <div class="d-none mt-2 alert alert-danger">
+                Your password doesn't match
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="submit-btn" disabled class="mt-5 btn btn-outline-danger">
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
